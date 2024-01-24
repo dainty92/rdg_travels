@@ -7,9 +7,6 @@ Welcome to the RDG Travels website project! This web application is designed to 
 - [Project Overview](#project-overview)
 - [Features](#features)
 - [Project Structure](#project-structure)
-- [Getting Started](#getting-started)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Project Overview
 
