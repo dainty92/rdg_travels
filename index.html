@@ -24,7 +24,6 @@
     <title>RDG Travels</title>
 </head>
 <body>
-    <section class="home">
     <header>
         <div class="logo">
             <img src="images/rdg-logo.png" alt="RDG Logo">
@@ -89,29 +88,26 @@
                             <label for="returningTo">Returning To</label>
                             <input type="date" id="returningTo" name="returningTo" required>
                         </div>
-                    </div>
-                </div>
-    
-                <!-- Passenger Details -->
-                <div class="passenger-details">
-                    <div class="form-group">
-                        <label for="fullName">Full Name</label>
-                        <input type="text" id="fullName" name="fullName" placeholder="John Doe" required>
-                    </div>
-    
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" placeholder="Johndoe@mail.com" required>
-                    </div>
-    
-                    <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" pattern="[+]{1}[0-9]{1,}" placeholder="+234 566 566 7789" required>
-                    </div>
-    
-                    <div class="form-group">
-                        <label for="passengers">No of Passengers</label>
-                        <input type="number" id="passengers" name="passengers" min="1" placeholder="2" required>
+
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" name="fullName" placeholder="John Doe" required>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Johndoe@mail.com" required>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" pattern="[+]{1}[0-9]{1,}" placeholder="+234 566 566 7789" required>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="passengers">No of Passengers</label>
+                            <input type="number" id="passengers" name="passengers" min="1" placeholder="2" required>
+                        </div>
                     </div>
                 </div>
     
@@ -121,7 +117,6 @@
                 </div>
             </form>
         </div>
-    </section>
     </section>
 
     <!-- Home Section -->
@@ -527,7 +522,7 @@
                     <p>A monthly digest of the latest news, articles, and resources.</p>
                 </div>
                 <form>
-                    <input type="email" placeholder="Email address">
+                    <input type="email" placeholder="Email address" required>
                     <button type="submit">Subscribe</button>
                 </form>
             </div>
@@ -543,7 +538,7 @@
 </body>
 
 <script src="/form-validation.js"></script>
-<script src="/customer-feedback.js"></script>
+<!-- <script src="/customer-feedback.js"></script> -->
 
 <!-- <script>
     initAutocomplete();

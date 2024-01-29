@@ -129,7 +129,13 @@ nav ul li a {
     line-height: 28px;
 }
 
-.flight-info,
+.flight-info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 16px;
+    justify-content: space-between;
+}
+
 .passenger-details {
     display: flex;
     flex-direction: row;
@@ -807,6 +813,7 @@ h3 {
 }
 
 .footer-container button {
+    cursor: pointer;
     padding: 8px 20px;
     border-radius: 6px;
     background-color: #093BA8;
