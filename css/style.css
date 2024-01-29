@@ -15,14 +15,16 @@ body {
 
 header {
     background-color: #fff;
-    padding: 20px 100px;
+    /* padding: 20px 100px; */
+    padding: 10px 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .logo {
-    max-width: 230px !important;
+    /* max-width: 230px !important; */
+    max-width: 224px !important;
     height: 64px !important;
 }
 

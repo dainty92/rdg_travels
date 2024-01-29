@@ -1,20 +1,23 @@
 
-@import url(https://db.onlinewebfonts.com/c/961a181da27e7cbc072ec2fb5bbfe2a9?family=Circular+Std+Bold);
+@import url(https://db.onlinewebfonts.com/c/961a181da27e7cbc072ec2fb5bbfe2a9?family=Circular+Std+Bold+200);
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Circular Std Bold",Arial, Helvetica, sans-serif;
 }
 body{
-    background: #fff;
+    font-family: "Circular Std Bold",Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #111827;
 }
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100vw;
-    padding: 10px 5%;
+    /* width: 100vw; */
+    padding: 10px 10%;
 }
 .logo{
     width: 224px;
@@ -22,12 +25,12 @@ header{
     cursor: pointer;
 }
 nav{
-    margin-right: 15px;
+    margin-right: 20px;
 }
 .nav-links{
     list-style-type: none;
     display: flex;
-    gap: 30px;
+    gap: 20px;
 }
 /* nav-links li {
     display: inline-block;
@@ -37,13 +40,18 @@ nav{
     text-decoration: none;
     text-transform: capitalize;
     font-family: "Circular Std Bold",Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-weight: 100;
+    font-size: 1rem;
+    padding: 10px 0;
+    text-align: center;
 }
 .nav-links li a:hover{
     color: #0088a9;
 }
 
 .fa-whatsapp{
+    height: 20px;
+    margin-right: 5px;
     color: #25D366;
     /* font-size: 30px; */
 }
