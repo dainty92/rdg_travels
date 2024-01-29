@@ -1,9 +1,54 @@
 .study-hero-section {
-    position: relative;
     background-image: url('/images/study-background-image.png');
+    background: linear-gradient(0deg, rgba(9, 59, 168, 0.40) 0%, rgba(9, 59, 168, 0.40) 100%), url(/images/study-background-image.png), lightgray 50% / cover no-repeat;
     background-size: cover;
     background-position: center;
     color: #fff;
-    text-align: center;
-    padding: 80px 16px;
+    padding: 90px 112px;
+    display: flex;
+}
+
+.study-welcome-text {
+    flex-grow: 1;
+}
+
+.study-welcome-text h1 {
+    max-width: 450px;
+    text-align: left;
+    font-size: 3em;
+    margin-top: 24px;
+    letter-spacing: -0.96px;
+    font-weight: 500;
+    line-height: 60px;
+}
+
+.study-abroad-section {
+    background-color: #fff;
+    color: #111827;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0px 4px 16px 0px rgba(17, 34, 17, 0.05);
+    flex-grow: 1;
+}
+
+.study-abroad-section .form-group {
+    margin-bottom: 20px;
+}
+
+.text p {
+    margin-bottom: 32px;
+    font-size: 1.25em;
+}
+
+.study-type {
+    display: flex;
+    flex-grow: 1;
+    gap: 20px;
+}
+
+.start-study-button {
+    text-align: right;
 }
