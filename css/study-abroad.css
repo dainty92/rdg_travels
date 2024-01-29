@@ -22,6 +22,7 @@
     line-height: 60px;
 }
 
+
 .study-abroad-section {
     background-color: #fff;
     color: #111827;
@@ -45,8 +46,8 @@
 }
 
 .study-type {
-    display: flex;
-    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
@@ -68,6 +69,10 @@
 
 .study-welcome-text {
     padding: 32px 0px;
+}
+
+.study-welcome-text p {
+    text-align: justify;
 }
 
 .welcome-image img {
@@ -92,11 +97,13 @@
 
 .welcome-text-heading span {
     color: #093BA8;
+    font-family: "Circular Std Black",Arial, Helvetica, sans-serif;
 }
 
 .welcome-text p,
 .packages-heading p,
-.study-why-choose-us-container p {
+.study-why-choose-us-container p,
+.study-welcome-text p {
     color: #6B7280;
     font-size: 1em;
     line-height: 24px;
