@@ -12,6 +12,10 @@ body {
     color: #111827;
 }
 
+a {
+    text-decoration: none;
+}
+
 
 header {
     background-color: #fff;
@@ -741,11 +745,14 @@ h3 {
 
 .footer-container ul {
     list-style: none;
-    color:#6B7280;
 }
 
 .footer-container ul li {
     margin-bottom: 8px;
+}
+
+.footer-container a {
+    color:#6B7280;
 }
 
 .social-icons {
