@@ -8,9 +8,6 @@
     display: flex;
 }
 
-.study-welcome-text {
-    flex-grow: 1;
-}
 
 .study-welcome-text h1 {
     max-width: 450px;
@@ -68,7 +65,7 @@
 }
 
 .study-welcome-text {
-    padding: 32px 0px;
+    padding: 48px 0px 0px;
 }
 
 .study-welcome-text p {
@@ -159,10 +156,12 @@
     font-size: 1em;
     margin-bottom: 40px;
     text-align: justify;
+    line-height: 24px;
 }
 
 .package-container img {
-    max-width: 100%;
+    width: 100%;
+    height: auto;
     border-radius: 8px;
 }
 
