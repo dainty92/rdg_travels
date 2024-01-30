@@ -1,3 +1,5 @@
+@import url(https://db.onlinewebfonts.com/c/961a181da27e7cbc072ec2fb5bbfe2a9?family=Circular+Std+Black);
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +7,7 @@
 }
 
 body {
-    font-family: "Arial", sans-serif;
+    font-family: "Circular Std Black",Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #fff;
@@ -15,7 +17,6 @@ body {
 a {
     text-decoration: none;
 }
-
 
 header {
     background-color: #fff;
@@ -69,6 +70,7 @@ nav ul li a {
 }
 
 .welcome-text {
+    text-align: left;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -91,23 +93,17 @@ nav ul li a {
 
 /* Book Flight Form Styles */
 .book-flight-section {
-    margin-top: 32px;
     background-color: #fff;
     color: #111827;
     padding: 32px;
     display: flex;
-    max-width: 1300px;
+    width: 100%;
     flex-direction: column;
     justify-content: space-between;
     /* align-items: flex-end; */
     gap: 32px;
     border-radius: 10px;
     box-shadow: 0px 4px 16px 0px rgba(17, 34, 17, 0.05);
-}
-
-.flight-details,
-.passenger-details {
-    margin-bottom: 32px;
 }
 
 .flight-details-heading {
@@ -117,10 +113,14 @@ nav ul li a {
     align-items: baseline;
 }
 
+.flight-icon i {
+    font-size: 1.5em;
+}
+
 
 .fa-plane {
     color: #093BA8;
-    height: 24px;
+    font-size: 1.5em;
 }
 
 .flight-details .text {
@@ -129,18 +129,20 @@ nav ul li a {
     line-height: 28px;
 }
 
-.flight-info,
-.passenger-details {
-    display: flex;
-    flex-direction: row;
-    gap: 1em;
+.flight-info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 16px;
+    justify-content: space-between;
 }
+
 
 .form-group {
     position: relative;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    margin-bottom: 32px;
 }
 
 .form-group label {
@@ -156,14 +158,22 @@ nav ul li a {
     padding: 8px;
 }
 
-.form-group input {
+.form-group input,
+.form-group select {
     width: 100%;
     height: 56px;
-    padding: 8px 0px 8px 16px;
+    padding: 8px 16px 8px 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 1em;
+}
+
+.form-group input:not(.guest input) {
     padding-left: 12px;
+}
+
+.guest input {
+    padding-left: 32px;
 }
 
 .book-flight-button {
@@ -172,7 +182,8 @@ nav ul li a {
     height: 40px;
 }
 
-.book-flight-button button {
+.book-flight-button button,
+.start-study-button button {
     border-radius: 6px;
     background-color: #093BA8;
     padding: 8px 20px;
@@ -201,6 +212,10 @@ h2 {
     margin-bottom: 16px;
     line-height: 40px;
     letter-spacing: -0.64px;
+}
+
+p, li, h3, h4, a, span, label {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 p {
@@ -272,6 +287,7 @@ h3 {
 
 .service-link i {
     margin-left: 1px;
+    font-size: 1.25em;
 }
 
 /* Font Awesome Icons */
@@ -403,6 +419,7 @@ h3 {
 .hotel-cards {
     display: flex;
     gap: 32px;
+    cursor: pointer;
 }
 
 
@@ -477,6 +494,7 @@ h3 {
 }
 
 .why-choose-us-text p {
+    text-align: justify;
     font-size: 1em;
     line-height: 24px;
 }
@@ -538,11 +556,12 @@ h3 {
     gap: 32px;
     justify-content: space-between;
     align-items: center;
+    flex-grow: 1;
 }
 
 .customer-feedback-text {
     /* flex-grow: 1; */
-    max-width: 43%;
+    /* max-width: 50%; */
     line-height: 36px;
 }
 
@@ -612,6 +631,7 @@ h3 {
 }
 
 .partners-container {
+    flex: 1;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 48px;
@@ -807,6 +827,7 @@ h3 {
 }
 
 .footer-container button {
+    cursor: pointer;
     padding: 8px 20px;
     border-radius: 6px;
     background-color: #093BA8;

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/262ff4d8d9.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHOmuCBdqrK1esALcGnicfVP60l2oTrFg&libraries=places"></script>
     <script>
@@ -24,7 +25,6 @@
     <title>RDG Travels</title>
 </head>
 <body>
-    <section class="home">
     <header>
         <div class="logo">
             <img src="images/rdg-logo.png" alt="RDG Logo">
@@ -89,29 +89,26 @@
                             <label for="returningTo">Returning To</label>
                             <input type="date" id="returningTo" name="returningTo" required>
                         </div>
-                    </div>
-                </div>
-    
-                <!-- Passenger Details -->
-                <div class="passenger-details">
-                    <div class="form-group">
-                        <label for="fullName">Full Name</label>
-                        <input type="text" id="fullName" name="fullName" placeholder="John Doe" required>
-                    </div>
-    
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" placeholder="Johndoe@mail.com" required>
-                    </div>
-    
-                    <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" pattern="[+]{1}[0-9]{1,}" placeholder="+234 566 566 7789" required>
-                    </div>
-    
-                    <div class="form-group">
-                        <label for="passengers">No of Passengers</label>
-                        <input type="number" id="passengers" name="passengers" min="1" placeholder="2" required>
+
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" name="fullName" placeholder="John Doe" required>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Johndoe@mail.com" required>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" pattern="[+]{1}[0-9]{1,}" placeholder="+234 566 566 7789" required>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="passengers">No of Passengers</label>
+                            <input type="number" id="passengers" name="passengers" min="1" placeholder="2" required>
+                        </div>
                     </div>
                 </div>
     
@@ -121,7 +118,6 @@
                 </div>
             </form>
         </div>
-    </section>
     </section>
 
     <!-- Home Section -->
@@ -301,61 +297,54 @@
             </div>
         </div>
         
-    
         <div class="hotel-cards">
-            <a href="hotel-detail-page1.html">
-                <div class="hotel-card">
-                    <div class="image-container">
-                        <img src="images/hotel-image1.png" alt="Hotel Image">
+            <div class="hotel-card">
+                <div class="image-container">
+                    <img src="images/hotel-image1.png" alt="Hotel Image">
+                </div>
+                <div class="hotel-details">
+                    <h3>Radisson Blue Hotel</h3>
+                    <div class="location">
+                        <i class="fa fa-map-marker"></i>
+                        <p>Kenya, South Africa, London, Turkey</p>
                     </div>
-                    <div class="hotel-details">
-                        <h3>Radisson Blue Hotel</h3>
-                        <div class="location">
-                            <i class="fa fa-map-marker"></i>
-                            <p>Kenya, South Africa, London, Turkey</p>
-                        </div>
-                        <div class="book-now-button">
-                            <a href="#" class="book-now-link">Book Now</a>
-                        </div>
+                    <div class="book-now-button">
+                        <a href="#" class="book-now-link">Book Now</a>
                     </div>
                 </div>
-            </a>
+            </div>
             
-            <a href="hotel-detail-page2.html">
-                <div class="hotel-card">
-                    <div class="image-container">
-                        <img src="images/hotel-image2.png" alt="Hotel Image">
+            <div class="hotel-card">
+                <div class="image-container">
+                    <img src="images/hotel-image2.png" alt="Hotel Image">
+                </div>
+                <div class="hotel-details">
+                    <h3>Tribe London Canary Wharf</h3>
+                    <div class="location">
+                        <i class="fa fa-map-marker"></i>
+                        <p>London, United Kingdom</p>
                     </div>
-                    <div class="hotel-details">
-                        <h3>Tribe London Canary Wharf</h3>
-                        <div class="location">
-                            <i class="fa fa-map-marker"></i>
-                            <p>London, United Kingdom</p>
-                        </div>
-                        <div class="book-now-button">
-                            <a href="#" class="book-now-link">Book Now</a>
-                        </div>
+                    <div class="book-now-button">
+                        <a href="#" class="book-now-link">Book Now</a>
                     </div>
                 </div>
-            </a>
+            </div>
     
-            <a href="hotel-detail-page3.html">
-                <div class="hotel-card">
-                    <div class="image-container">
-                        <img src="images/hotel-image3.png" alt="Hotel Image">
+            <div class="hotel-card">
+                <div class="image-container">
+                    <img src="images/hotel-image3.png" alt="Hotel Image">
+                </div>
+                <div class="hotel-details">
+                    <h3>Renaissance Paris Republique</h3>
+                    <div class="location">
+                        <i class="fa fa-map-marker"></i>
+                        <p>France</p>
                     </div>
-                    <div class="hotel-details">
-                        <h3>Renaissance Paris Republique</h3>
-                        <div class="location">
-                            <i class="fa fa-map-marker"></i>
-                            <p>France</p>
-                        </div>
-                        <div class="book-now-button">
-                            <a href="#" class="book-now-link">Book Now</a>
-                        </div>
+                    <div class="book-now-button">
+                        <a href="#" class="book-now-link">Book Now</a>
                     </div>
                 </div>
-            </a>
+            </div>
         </div>
     </section>   
     
@@ -369,7 +358,7 @@
             <div class="feature-container">
                 <div class="feature">
                     <div class="feature-icon">
-                        <i class="fas fa-medal"></i>
+                        <i class="fas fa-award"></i>
                     </div>
                     <div class="feature-detail">
                         <h2>10+</h2>
@@ -527,7 +516,7 @@
                     <p>A monthly digest of the latest news, articles, and resources.</p>
                 </div>
                 <form>
-                    <input type="email" placeholder="Email address">
+                    <input type="email" placeholder="Email address" required>
                     <button type="submit">Subscribe</button>
                 </form>
             </div>
@@ -543,7 +532,7 @@
 </body>
 
 <script src="/form-validation.js"></script>
-<script src="/customer-feedback.js"></script>
+<!-- <script src="/customer-feedback.js"></script> -->
 
 <!-- <script>
     initAutocomplete();
