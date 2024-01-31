@@ -126,21 +126,22 @@ margin-bottom: 250px;
 }
 
 
-.hero-section form {
+.book-flight-section {
     background-color: #fff;
+    color: #111827;
+    padding: 32px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
     border-radius: 10px;
-    bottom: 0;
-      box-shadow: 0px 4px 16px 0px rgba(17, 34, 17, 0.05);
-      margin: auto;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 16px;
-      padding: 32px;
-      width: 100%;
+    box-shadow: 0px 4px 16px 0px rgba(17, 34, 17, 0.05);
+      
     }
 
 
-.hero-section .flight-details {
+.flight-details-heading {
     text-transform: capitalize;
     font-size: 13px;
     margin-left: 5px;
@@ -153,18 +154,47 @@ margin-bottom: 250px;
     margin-right: 10px;
 }
 
-.hero-section input, .hero-section select{
-width: 100%;
-height: 56px;
-padding: 10px;
-border: solid 1px #5c5a5a;
-border-radius: 4px;
+.flight-form{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 16px;
+    justify-content: space-between;
 }
+
+ .form-group {
+         position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-bottom: 16px;
+      }
+
+     .form-group label {
+        position: absolute;
+        top: -15%;
+        left: 10px;
+        background-color: #fff;
+        padding: 0 5px;
+        color: #555;
+        font-size: 12px;
+        transition: top 0.3s, font-size 0.3s;
+      }
+
+      .form-group input,
+.form-group select {
+    width: 100%;
+    height: 56px;
+    padding: 8px 16px 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+
+
 .hero-section .book-flight-button-container{  
     grid-column: span 4;
     justify-self: end;
-    align-self: end;
-    width: 100px;
 }
 .hero-section #book-flight-button{
     background: #093ba8;
@@ -173,41 +203,8 @@ border-radius: 4px;
     text-transform: capitalize;
     border-radius: 5px;
     border: none;
-    width: 100%;
+    
 }
-
-
- /* .form-group {
-        position: relative;
-        margin-bottom: 20px;
-      }
-
-     .form-group label {
-        position: absolute;
-        top: 0;
-        left: 10px;
-        background-color: #fff;
-        padding: 0 5px;
-        color: #555;
-        font-size: 14px;
-        transition: top 0.3s, font-size 0.3s;
-      }
-
-      .form-group input {
-        width: 100%;
-        width: calc(100% - 20px);
-        padding: 10px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        outline: none;
-      }
-
-     .form-group input:focus + .form-group label,
-     .form-group input:not(:placeholder-shown) + .form-group label {
-        top: -12px;
-        font-size: 12px;
-        background-color: #fff;
-      } */
 
 
 /* @media (max-width: 768px) {
