@@ -60,44 +60,201 @@
                     </div>
                     <div class="package-include">
                         <h4>Package Includes</h4>
-                        <div><span class="check-icon"></span>City Tour with English Speaking Tour Guide</div>
-                        <div><span class="check-icon"></span>Museum of Ice-cream + Gardens by the Bay (Includes Flower Dome + Cloud Forest)</div>
-                        <div><span class="check-icon"></span>Return Airport Transfer</li>
-                        <div><span class="check-icon"></span>Sentosa: (Cable Car + Madame Taussauds 4in1 + Sky Helix + Wings of Time) with English Speaking Tour Guide</div>
-                        <div><span class="check-icon"></span>Visa Application</div>
-                        <div><span class="check-icon"></span>Universal Studio</div>
+                        <div>
+                            <span class="check-icon"><img src="images/check-circle.svg" alt="Check Icon"></span>
+                            <p>City Tour with English Speaking Tour Guide</p>
+                        </div>
+                        <div>
+                            <span class="check-icon"><img src="images/check-circle.svg" alt="Check Icon"></span>
+                            <p>Museum of Ice-cream + Gardens by the Bay (Includes Flower Dome + Cloud Forest)</p>
+                        </div>
+                        <div>
+                            <span class="check-icon"><img src="images/check-circle.svg" alt="Check Icon"></span>
+                            <p>Return Airport Transfer</p>
+                        </div>
+                        <div>
+                            <span class="check-icon"><img src="images/check-circle.svg" alt="Check Icon"></span>
+                            <p>Sentosa: (Cable Car + Madame Taussauds 4in1 + Sky Helix + Wings of Time) with English Speaking Tour Guide</p>
+                        </div>
+                        <div>
+                            <span class="check-icon"><img src="images/check-circle.svg" alt="Check Icon"></span>
+                            <p>Visa Application</p>
+                        </div>
+                        <div>
+                            <span class="check-icon"><img src="images/check-circle.svg" alt="Check Icon"></span>
+                            <p>Universal Studio</p>
+                        </div>
                     </div>
                 </div>
             </div>
     
             <!-- Container 2 -->
             <div class="total-package-container">
-                <h3>Total Package</h3>
-                <div class="price-info">
-                    <div class="price-option">
-                        <span class="price-text">Per Person Sharing</span>
-                        <span class="price-value">$1,430</span>
-                    </div>
-                    <div class="price-option">
-                        <span class="price-text">Single Occupancy</span>
-                        <span class="price-value">$2,145</span>
+                <div class="total-package">
+                    <p>Total Package</p>
+                    <div class="price-info">
+                        <div class="price-option">
+                            <span class="price-text">Per Person Sharing</span>
+                            <span class="price-value">$1,430</span>
+                        </div>
+                        <div class="price-option">
+                            <span class="price-text">Single Occupancy</span>
+                            <span class="price-value">$2,145</span>
+                        </div>
                     </div>
                 </div>
-                <div class="border-line"></div>
-                <h4>Book Now</h4>
-                <form class="booking-form">
-                    <input type="text" placeholder="Full Name" required>
-                    <input type="email" placeholder="Email" required>
-                    <input type="tel" placeholder="Phone Number" required>
-                    <select name="package-type" id="package-type" required>
-                        <option value="per-person-sharing">Per Person Sharing (2 people)</option>
-                        <option value="single-occupancy">Single Occupancy (1 person)</option>
-                    </select>
-                    <button type="submit">Book Now</button>
-                </form>
+
+                <div class="book-now">
+                    <p>Book Now</p>
+                    <div class="flight-info book-now-info">
+                        <form class="booking-form">
+                            <div class="form-group">
+                                <label for="fullName">Full Name</label>
+                                <input type="text" id="fullName" placeholder="Full Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="Email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phoneNumber">Phone Number</label>
+                                <input type="tel" id="phoneNumber" placeholder="Phone Number" required>
+                            </div>
+                            <div class="package-type">
+                                <label for="packageType">Package Type</label>
+                                <div>
+                                    <label for="per-person-sharing">
+                                        <input type="radio" id="per-person-sharing" name="package-type" value="per-person-sharing" required>
+                                        Per Person Sharing (2 people)
+                                    </label>
+                                    <label for="single-occupancy">
+                                        <input type="radio" id="single-occupancy" name="package-type" value="single-occupancy" required>
+                                        Single Occupancy (1 person)
+                                    </label>
+                                </div>
+                            </div>
+                            <button type="submit">Book Now</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </section>    
+
+    <section class="trending-destinations-section">
+        <div class="trending-header">
+            <h2>Other Travel Packages</h2>
+        </div>
+        <div class="destination-cards">            
+            <a href="destination-detail2.html">
+                <div class="destination-card">
+                    <div class="image-container">
+                        <img src="images/destination-image2.png" alt="Destination Image">
+                        <div class="price-tag">
+                            <p>Price from: $3,250/person</p>
+                        </div>
+                    </div>
+                    <div class="destination-details">
+                        <h3>UAE December Cruise</h3>
+                        <div class="schedule">
+                            <i class="fa fa-clock"></i>
+                            <p>22nd Dec - 2nd Jan, 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="destination-detail3.html">
+                <div class="destination-card">
+                    <div class="image-container">
+                        <img src="images/destination-image3.png" alt="Destination Image">
+                        <div class="price-tag">
+                            <p>Price from: $1,200/person</p>
+                        </div>
+                    </div>
+                    <div class="destination-details">
+                        <h3>Summer in Nairobi</h3>
+                        <div class="schedule">
+                            <i class="fa fa-clock"></i>
+                            <p>22nd Dec - 2nd Jan, 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="destination-detail4.html">
+                <div class="destination-card">
+                    <div class="image-container">
+                        <img src="images/destination-image4.png" alt="Destination Image">
+                        <div class="price-tag">
+                            <p>Price from: $1,500/person</p>
+                        </div>
+                    </div>
+                    <div class="destination-details">
+                        <h3>Summer in Nairobi</h3>
+                        <div class="schedule">
+                            <i class="fa fa-clock"></i>
+                            <p>22nd Dec - 2nd Jan, 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-section footer-first-section">
+            <div class="footer-container">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about-us.html">About</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                    <li><a href="terms-and-condition.html">Terms and Conditions</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-container">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="flight.html">Flight Booking</a></li>
+                    <li><a href="study-abroad.html">Study Abroad Program</a></li>
+                    <li><a href="hotel-service.html">Hotel Reservations</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-container">
+                <h4>Follow Us</h4>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="footer-section subscribe-section">
+            <div class="footer-container">
+                <div>
+                    <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
+                    <p>A monthly digest of the latest news, articles, and resources.</p>
+                </div>
+                <form>
+                    <input type="email" placeholder="Email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    
+        <div class="footer-section copyright-section">
+            <div class="footer-container">
+                <img src="images/rdg-logo.png" alt="RDG Logo">
+                <p>© 2023 RDG Consults. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
     
 </body>
 </html>

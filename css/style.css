@@ -203,7 +203,7 @@ nav ul li a {
     pointer-events: none;
     transition: all 0.3s ease;
     background-color: #fff;
-    /* padding: 8px; */
+    padding: 0px 8px;
 }
 
 .form-group input,
@@ -425,7 +425,7 @@ h3 {
 
 .image-container img {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 8px 8px 0px 0px;
     /* display: block; */
 }
 

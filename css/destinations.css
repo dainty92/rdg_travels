@@ -1,3 +1,5 @@
+@import url(https://db.onlinewebfonts.com/c/961a181da27e7cbc072ec2fb5bbfe2a9?family=Circular+Std+Black);
+
 .destination-hero-section {
     width: 100%;
     height: 540px;
@@ -90,9 +92,8 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 48px;
-    flex: 1 0 0;
+    flex: 2.0;
     border-bottom: 1px solid rgba(166, 170, 172, 0.20);
-    /* padding-bottom: 32px; */
 }
 
 .date-location {
@@ -110,24 +111,25 @@
 .calender-detail {
     display: flex;
     flex-direction: row;
-    align-items: baseline;   
+    align-items: baseline; 
+    gap: 8px;  
 }
 
-/* .date-location div {
+.calender-icon img {
     display: flex;
-    flex-direction: row;
     align-items: baseline;
-} */
-
-.calendar-icon {
-    margin-right: 8px;
 }
 
 .date {
+    display: flex;
     color: #0F1416;
+    align-items: baseline;
 }
 
-h4, h3 {
+h4, 
+h3, 
+.total-package-container p, 
+.booking-form .form-group {
     margin-top: 0px;
     margin-bottom: 0px;
 }
@@ -156,71 +158,146 @@ h4, h3 {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding-bottom: 20px;
+}
+
+.package-include div {
+    display: flex;
+    gap: 10px;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 26px;
+}
+
+.package-include div img {
+    max-width: inherit;
+    height: auto;
+}
+
+.package-include p {
+    padding-bottom: 0px;
 }
 
 .total-package-container {
     flex: 1;
-    background-color: #fff;
-    border: 2px solid #ccc;
+    height: fit-content;
     border-radius: 8px;
     padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+    border-radius: 10px;
+    border: 1px solid #E4E7EC;
+    box-shadow: 0px 55px 90px 0px rgba(0, 0, 0, 0.03), 0px 55px 70px 0px rgba(0, 0, 0, 0.03);
+}
+
+.total-package {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.total-package-container p {
+    font-size: 1em;
+    font-weight: bold;
 }
 
 .price-info {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 16px;
+    align-items: flex-start;
+    gap: 28px;
+    flex-grow: 1;
 }
 
 .price-option {
-    text-align: center;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
 }
 
 .price-text {
-    font-size: 0.9em;
-    color: #555;
+    display: flex;
+    flex-grow: 1;
+    font-size: 0.875em;
+    color: #6B7280;
 }
 
 .price-value {
-    font-size: 1.2em;
-    font-weight: bold;
+    display: flex;
+    flex-grow: 1;
+    font-family: "Circular Std Black";
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #0F1416;
 }
 
-.border-line {
-    border-bottom: 2px solid #ccc;
-    margin-bottom: 16px;
+.book-now {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    gap: 24px;
+    padding-top: 24px;
 }
+
+.book-now-info {
+    display: flex;
+}
+
+.booking-form .form-group {
+    margin-bottom: 0px;
+}
+
 
 h4 {
     font-size: 1.25em;
 }
 
 .booking-form {
+    width: 100%;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    gap: 24px;
 }
 
-input,
-    select,
-    button {
-        margin-bottom: 16px;
-        padding: 8px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        outline: none;
-    }
+/* .booking-form input:not(.package-type input),
+button {
+    width: calc(200% - 76px)
+} */
 
-    select {
-        width: 100%;
-    }
+.package-type {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
 
-    button {
-        background-color: #007BFF;
-        color: #fff;
-        cursor: pointer;
-        transition: background-color 0.3s;
-    }
+.package-type div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+}
 
-    button:hover {
-        background-color: #0056b3;
-    }
+button {
+    margin-top: 4px;
+    border: none;
+    border-radius: 6px;
+    background: #093BA8;
+    padding: 10px 24px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.125em;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
