@@ -10,6 +10,10 @@ html {
     scroll-behavior: smooth;
 }
 
+section {
+    display: flex;
+}
+
 body {
     font-size: 1em;
     font-family: "Circular Std Black",Arial, Helvetica, sans-serif;
@@ -42,8 +46,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* position: fixed; */
-    /* z-index: 9999; */
+    position: fixed;
+    z-index: 9999;
 }
 
 .menu-icon {
@@ -138,7 +142,6 @@ nav ul li a {
     color: #111827;
     padding: 32px;
     display: flex;
-    width: 100%;
     flex-direction: column;
     justify-content: space-between;
     /* align-items: flex-end; */
@@ -171,9 +174,6 @@ nav ul li a {
 }
 
 .flight-info {
-    /* display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 16px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -189,7 +189,7 @@ nav ul li a {
     position: relative;
     display: flex;
     flex-direction: column;
-    /* flex-grow: 1; */
+    flex-grow: 1;
     margin-bottom: 32px;
 }
 
@@ -203,11 +203,12 @@ nav ul li a {
     pointer-events: none;
     transition: all 0.3s ease;
     background-color: #fff;
-    padding: 8px;
+    /* padding: 8px; */
 }
 
 .form-group input,
 .form-group select {
+    display: flex;
     width: 100%;
     height: 56px;
     padding: 8px 16px 8px 16px;
@@ -386,15 +387,9 @@ h3 {
 } */
 
 .destination-cards {
-    /* display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 32px;
-    justify-content: space-between;
-    margin: 0 auto; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* align-items: center; */
     gap: 48px;
     align-self: stretch;
 }
@@ -407,7 +402,7 @@ h3 {
 .destination-card {
     height: 372px;
     display: flex;
-    flex: 1 1 calc(33.33% - 10px);
+    flex: 1 1 calc(33.33% - 32px);
     flex-direction: column;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -624,15 +619,18 @@ h3 {
 
 .feature-container {
     margin-top: 32px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 32px;
-    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    flex-wrap: wrap;
 }
 
 .feature {
     margin-bottom: 40px;
     display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex: calc(50% -32px);
     gap: 24px;
     text-align: left;
 }
@@ -751,6 +749,7 @@ h3 {
     background-color: #ECF7FF;
     padding: 64px 112px;
     text-align: left;
+    flex-direction: column;
 }
 
 .partners-container {

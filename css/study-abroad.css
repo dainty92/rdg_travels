@@ -6,6 +6,7 @@
     color: #fff;
     padding: 90px 112px;
     display: flex;
+    width: 100%;
 }
 
 
@@ -110,40 +111,59 @@
     text-align: justify;
 }
 
-
 .packages-section {
     background-color: #f9f9f9;
     padding: 64px 112px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
 }
 
 .packages-heading {
     text-align: left;
-    margin-bottom: 48px;
+    width: 100%;
 }
 
 .packages-heading h2 {
     font-size: 2em;
-    margin-bottom: 12px;
+    margin-bottom: 24px;
 }
 
 .packages-heading p {
     letter-spacing: -0.32px;
+    margin-bottom: 0px;
 }
 
 .packages-grid {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
+    gap: 32px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    align-items: flex-start;
+    flex-grow: 1;
+    gap: 48px;
+    align-self: stretch;
 }
 
 .package-container {
+    /* height: 448px; */
     background-color: #fff;
     border: none;
     box-shadow: 0px 20px 184px -10px rgba(0, 0, 0, 0.14);
     border-radius: 8px;
     padding: 24px;
     text-align: left;
-    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1 0 0;
+    align-self: stretch;
+    flex: 0 0 calc(33.33% - 48px);
 }
 
 .package-container h3 {
@@ -162,12 +182,14 @@
 .package-container img {
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    flex-grow: 1;
+    /* border-radius: 8px; */
 }
 
 .study-why-choose-us-section {
     background-color: #ECF7FF;
     padding: 64px 112px;
+    flex-direction: column;
 }
 
 .why-choose-us-heading {
@@ -194,9 +216,8 @@
     text-align: center;
 }
 
-.study-why-choose-us-container i {
-    font-size: 3.5em;
-    color: #093ba8;
+.study-why-choose-us-container img {
+    height: 56px;
 }
 
 .study-why-choose-us-container h3 {
@@ -213,21 +234,25 @@
     background: linear-gradient(0deg, rgba(9, 59, 168, 0.40) 0%, rgba(9, 59, 168, 0.40) 100%), url(/images/study-background-image2.png), lightgray 50% / cover no-repeat;
     background-size: cover;
     background-position: center;
-    color: #fff;
     padding: 64px 112px;
     display: flex;
 }
 
 .study-abroad-container .study-abroad-section {
-    max-width: 48%;
+    max-width: 50%;
     margin-left: auto;
     margin-top: 26px;
+}
+
+.study-form {
+    max-width: 100%;
 }
 
 .discover-section {
     background-color: #16163F;
     color: #ECF7FF;
     padding: 64px 112px;
+    flex-direction: column;
     text-align: center;
 }
 
